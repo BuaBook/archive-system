@@ -1,0 +1,12 @@
+# Crontab for Archive System
+# Copyright (C) 2016 - 2017 Sport Trades Ltd 
+
+# NOTE: This crontab should be installed into /etc/cron.d. A "user" column is therefore required
+# to instruct the cron system which user to run it as
+
+SHELL=/bin/bash
+MAILTO=*on-error-email*
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# m h dom mon dow user  command
+0 2 * * *   run-as-user    /path/to/archive/script/ >> /log/location/archive.log

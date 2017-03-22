@@ -1,0 +1,12 @@
+# ARCHIVE - Target Configuration
+
+# Copyright (C) Sport Trades Ltd
+# 2016
+
+# Each row of this file must contain
+#   - If the backup is to be kept locally ("local") or sent via SCP remotely ("remote")
+#   - The target folder if a local archive, or the remote file path if remote
+#
+# Lines beginning with # or space are ignored
+#
+# backup-type,backup-location

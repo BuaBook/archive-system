@@ -7,7 +7,7 @@ To configure the archive system, 2 files need to be created for _each_ host:
 * `archive.config`: Specifies the files to archive or delete
 * `archive.target`: The target where the files should be archived.
 
-In the `config` folder there should be a sub-folder with the name of the host the configuration belongs to. The name should be the output of `$(hostname)` on the target host.
+The configuration should be stored within a folder referenced by the variable `${BAS_CONFIG}` and there should be a sub-folder with the name of the host the configuration belongs to. The name should be the output of `$(hostname)` on the target host.
 
 We configure the archive script to run every day at 02:00 with the cron job definition defined in `config/cron-template/cron.template`. This should be modified and installed into `/etc/cron.d` on the source machine.
 

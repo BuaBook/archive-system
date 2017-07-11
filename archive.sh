@@ -7,8 +7,8 @@
 readonly PROGNAME=$(basename $0)
 readonly PROGDIR=$(readlink -m $(dirname $0))
 
-readonly SOURCE_CONFIG=${PROGDIR}/config/$(hostname)/archive.config
-readonly TARGET_CONFIG=${PROGDIR}/config/$(hostname)/archive.target
+readonly SOURCE_CONFIG=${BAS_CONFIG}/$(hostname)/archive.config
+readonly TARGET_CONFIG=${BAS_CONFIG}/$(hostname)/archive.target
 
 readonly RSYNC_OPTIONS="--archive --ipv4 --compress --verbose --copy-links --progress --relative"
 

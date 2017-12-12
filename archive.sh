@@ -10,7 +10,7 @@ readonly PROGDIR=$(readlink -m $(dirname $0))
 readonly SOURCE_CONFIG=${BAS_CONFIG}/$(hostname)/archive.config
 readonly TARGET_CONFIG=${BAS_CONFIG}/$(hostname)/archive.target
 
-readonly RSYNC_OPTIONS="--archive --ipv4 --compress --verbose --copy-links --progress --relative"
+readonly RSYNC_OPTIONS="--archive --ipv4 --compress --verbose --copy-links --progress --relative --keep-dirlinks"
 
 source ${PROGDIR}/bash-helpers/src/bash-helpers.sh
 set +e
